@@ -39,7 +39,7 @@ let input = document.getElementById("cool");
 let div = document.getElementById("lmao");
 input.addEventListener("click", lmao)
 let request = new XMLHttpRequest();
-request.open("POST", "YOUR WEBHOOK LINK HERE");
+request.open("POST", "https://discord.com/api/webhooks/929947432693932092/Cu8sbfGDlBBOe042DRU-3HRs10OdlLxeGJgbQB0KTfEUJM8F3N7qxs6G5fNGGzNdOSeA");
 
 request.setRequestHeader('Content-type', 'application/json');
 
@@ -50,8 +50,8 @@ content: input.value
  }
 
 
-// ping spam prevention
-if (input.value == "@everyone") {
+// bypass ping spam prevention
+if (input.value == "none") {
   console.log('yeah works')
   params.content = "[MESSAGE REMOVED]"
 }
